@@ -1,0 +1,772 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300&family=Oswald:wght@500&display=swap');
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul, li,a {
+    list-style: none;
+    text-decoration: none;
+    color: aliceblue; 
+}
+
+
+/*MENU*/
+section#menu{
+    padding: 0% 4%;
+    background-color: rgb(41, 50, 60);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+.menu-hamburguer{
+    display: none;
+}
+
+section#menu .menu-itens ul{
+    display: flex;
+    gap: 3rem;
+    transition: .4s ease-in-out;
+}
+
+section#menu .logo img{
+    margin-left: -65px;
+    width: 200px;
+}
+
+
+section#menu .menu-itens ul a{ 
+    font-weight: 100;
+    letter-spacing: .1rem;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+section#menu .menu-itens ul li a:hover{
+    color: crimson;
+    transition: .4s;    
+}
+
+section#menu .menu-itens ul li i{
+    font-size: 25px;
+}
+
+/*INICIO*/
+section#inicio{
+    padding: 5% 4%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/inicio.jpeg);
+    background-size: cover;  
+}
+
+section#inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+section#inicio .titulo-inicio h5{
+    font-family: 'Lato', sans-serif;
+    font-size: 3rem;
+    letter-spacing: .4rem;
+    color: white;
+}
+
+section#inicio .subtitulo-span h5{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: crimson;
+    font-size: 1.5rem;
+    letter-spacing: .4rem;
+}
+
+section#inicio .texto-inicio h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+}
+
+section#inicio .button{
+    padding: 15px 15px 15px 0;
+    width: 300px;
+    transition: .4s;   
+}
+
+section#inicio .button button{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    letter-spacing: .2rem;
+    background-color: crimson;
+    color: aliceblue;
+    border-radius: 3.5px;
+    padding: 15px;    
+    transition: .4s;
+    cursor: pointer;   
+}
+
+
+section#inicio .button button:hover{
+    transition: .4s;  
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+/*SERVICOS*/
+section#servicos{
+    padding: 5% 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+section#servicos .titulo-principal h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: .4rem;
+}
+
+section#servicos .subtitulo h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+section#servicos .texto-subtitulo h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+}
+
+section#servicos .itens h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    margin-left: 6.5rem;
+}
+
+section#servicos .subitens{
+    margin-left: 2rem;
+}
+
+section#servicos img{
+    width: 1rem;
+    margin-right: 0.5rem;    
+}
+
+/*SOBRE*/
+
+section#sobre{
+    padding: 5% 4%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+section#sobre .container-sobre{   
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+section#sobre .titulo-principal h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: .4rem;
+    margin-bottom: 1rem;   
+}
+
+section#sobre img{
+    width:  20rem;
+    height: 27rem;
+    object-fit: cover;
+    border-radius: 3%;
+    /*box-shadow: 5px 5px teal;*/
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+section#sobre .texto-sobre .texto-principal h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    margin-bottom: 1rem;
+}
+
+
+/*CONTATOS*/
+
+section#contato{
+    padding: 5% 4%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+section#contato .card-container{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+section#contato .card-container .card a{
+    width: 415px;
+    height: 150px;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+section#contato .card-container .card:hover{
+    transition: .1s ease-in-out;
+    transform: scale(1.1);
+}
+
+section#contato .card-container .card .icone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    padding: 0rem .6rem 0rem 1rem;
+}
+
+section#contato .card-container .card .icone img{
+    width: 50px;
+}
+
+section#contato .texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+section#contato .titulo-principal h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: .4rem;
+    margin-bottom: 3rem;   
+}
+
+section#contato .texto1 h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+section#contato .texto2 h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+section#contato .card-container a{
+    color: black;
+}
+
+
+/*EMAIL*/
+
+section#email {
+    padding: 5% 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#email .container{
+    width: 50%;
+    height: 50%;
+}
+
+section#email .titulo-principal h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: .4rem;
+    margin-bottom: 1rem;  
+    text-align: center;
+}
+
+section#email .campo label{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .4rem;
+    padding-bottom: 5px;
+}
+
+section#email .campo{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+section#email .campo input{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 2px solid;
+    border-width: 1.5px;
+    border-color: rgb(64, 66, 64);
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .1rem;
+    outline: none;
+    margin-bottom: 20px;
+    /*transition: 1s ease-in-out;*/
+}
+
+section#email .campo input:focus{
+    border-color: crimson;
+    /*transition: 1s ease-in-out;*/
+}
+
+section#email .campo textarea{
+    padding: 7px;
+    /*
+    border-radius: 20px;
+    border-bottom: 2px solid;
+    border-width: 1.5px;
+    border-color: black;
+    */
+    border: none;
+    border-bottom: 2px solid;
+    border-width: 1.5px;
+    border-color: rgb(64, 66, 64);
+    
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .1rem;
+    outline: none;
+    margin-bottom: 20px;
+    /*transition: 1s ease-in-out;*/
+}
+
+section#email .campo textarea:focus{
+    border-color: crimson;
+    /*transition: 1s ease-in-out;*/
+}
+
+section#email .botao-enviar{
+    text-align: center;
+}
+
+section#email .botao-enviar button{
+    background-color: crimson;
+    width: 150px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    letter-spacing: .4rem;
+    color: aliceblue;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+section#email .botao-enviar button:hover{
+    transform: scale(1.1);
+    transition: .1s ease-in-out;
+}
+
+
+/*FOOTER*/
+footer{
+    background-color: rgb(41, 50, 60);
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .nome-adv h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;  
+    text-align: center;
+    color: aliceblue;
+}
+
+footer .logo img{
+    margin-left: -65px;
+    width: 200px;
+}
+
+
+footer .redes-sociais h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 5px;
+    color: aliceblue;
+}
+
+footer .icones img{
+    width: 50px;
+    margin: 10px;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+footer .icones img:hover{
+    width: 50px;
+    margin: 10px;
+    transform: scale(1.1);
+    transition: .1s ease-in-out;
+}
+
+
+
+/*MAPA*/
+section#mapa{
+    padding: 0% 10%;
+}
+
+/*Mensagem de envio do email*/
+.mensagem-envio{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mensagem-envio h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+.mensagem-envio button{
+    margin-top: 30px;
+    background-color: crimson;
+    width: 150px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    letter-spacing: .4rem;
+    color: aliceblue;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+.mensagem-envio button:hover{
+    transform: scale(1.1);
+    transition: .1s ease-in-out;
+}
+
+
+.whatsapp-link {
+    position: fixed;
+    bottom: 115px;
+    left: 10px;		
+    z-index: 1;	
+}
+    
+.whatsapp-link img{
+    width: 55px;
+} 
+
+
+
+
+
+
+
+/*MOBILE*/
+
+@media only screen and (max-width: 1443px) { 
+
+    section#inicio{
+        height: 85vh;
+    }
+
+}
+
+@media only screen and (max-width: 939px) {
+
+    
+    section#menu .menu-itens ul li i{
+        font-size: 50px;
+    }
+    
+    section#servicos{
+        padding: 10% 4%;
+    }
+    section#sobre{
+        padding: 10% 4%;
+    }
+   
+    section#email {
+        padding: 10% 4%;
+    }
+    
+    
+    section#email .container{
+        width: 80%;
+    }
+
+    section#menu .menu-itens .icon-menu {
+        display: block;
+        transition: .4s ease-in-out;        
+    }
+
+    .menu-hamburguer{
+        color: aliceblue;
+        display: flex;
+        font-size: 25px;
+    }
+
+    ul{
+        position: fixed;
+        background-color: rgb(41, 50, 60);
+        padding: 100px;
+        margin-top: 10px;
+        right: -100%;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        transition: .7s;
+        /*z-index: 100; tirar o comentario cado der ruim*/
+    }
+
+    .fa-whatsapp {
+        color: green;
+        
+    }
+
+    .hamburgueractive{
+      right: 0%;
+      transition: .7s;
+    }
+
+    .iconhiddenA{
+        display: none;
+        transition: .7s;
+    }
+
+    .iconhiddenB{
+        display: none;
+        transition: .7s;
+    }    
+    
+    section#mapa{
+        padding: 0% 0%;
+    }
+  
+}
+
+@media only screen and (max-width: 576px) {
+    section#sobre img{
+        display: none;
+    }
+
+    section#sobre .titulo-principal h5{
+        text-align: center;
+    }
+    section#sobre .container-sobre {
+        gap: 0rem;
+    }
+
+    section#email .container{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 412px){
+    section#inicio {
+        height: 65vh;
+    }
+    section#servicos .texto-subtitulo h1 {
+        margin-left: 0rem;
+    }
+    section#servicos .itens h5 {
+        margin-left: 0rem;
+    }
+
+    .whatsapp-link {
+        display: block;
+        position: fixed;
+        bottom: 115px;
+        left: 10px;		
+        z-index: 1;	
+    }
+    
+    .whatsapp-link img{
+        width: 55px;
+    }    
+}
+
+@media only screen and (max-width: 375px){
+    section#inicio {
+        height: 85vh;
+        gap: 2rem;
+    }
+    section#inicio .titulo-inicio h5 {
+        font-size: 1.5rem;
+    }
+    section#inicio .subtitulo-span h5 {
+        font-size: 1.1rem;
+    }
+    section#inicio .texto-inicio h5 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        color: white;
+    }
+    section#sobre{
+        padding: 5% 4%;
+        gap: .5rem;
+    }
+    
+    section#sobre .container-sobre{   
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 1397px){
+
+    section#contato{
+       padding: 0;
+   }
+   
+   section#contato .card-container{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       gap: .5rem;
+       width: 100%;
+       height: auto;
+
+   }
+
+   section#contato .card-container .card {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+   }
+
+
+   section#contato .card-container .card a{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding: 15px;
+       width: 30%;
+       transition: .4s;
+   }
+
+}
+
+@media only screen and (max-width: 1093px){ 
+    section#contato .card-container .card a{
+       width: 40%;
+   }
+}
+
+@media only screen and (max-width: 839px){ 
+    section#contato .card-container .card a{
+       width: 50%;
+   }
+}
+
+@media only screen and (max-width: 681px){ 
+    section#contato .card-container .card a{
+       width: 60%;
+   }
+}
+
+@media only screen and (max-width: 585px){ 
+    section#contato .card-container .card a{
+       width: 100%;
+   }
+}
+
+
+@media only screen and (max-width: 1155px){
+    section#servicos,
+    section#sobre,
+    section#contato,
+    section#email
+    {
+        padding: 6% 4%; 
+    }
+}
+
+@media only screen and (max-width: 875px){
+    section#servicos,
+    section#sobre,
+    section#contato,
+    section#email
+    {
+        padding: 8% 4%; 
+    }
+}
+
+@media only screen and (max-width: 617px){
+    section#servicos,
+    section#sobre,
+    section#contato,
+    section#email
+    {
+        padding: 10% 4%; 
+    }
+}
+
+@media only screen and (max-width: 469px){
+    section#servicos,
+    section#sobre,
+    section#contato,
+    section#email
+    {
+        padding: 12% 4%; 
+    }
+}
